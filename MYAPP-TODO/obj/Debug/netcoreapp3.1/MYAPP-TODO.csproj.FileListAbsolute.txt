@@ -1,0 +1,17 @@
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\bin\Debug\netcoreapp3.1\MYAPP-TODO.exe
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\bin\Debug\netcoreapp3.1\MYAPP-TODO.deps.json
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\bin\Debug\netcoreapp3.1\MYAPP-TODO.runtimeconfig.json
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\bin\Debug\netcoreapp3.1\MYAPP-TODO.runtimeconfig.dev.json
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\bin\Debug\netcoreapp3.1\MYAPP-TODO.dll
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\bin\Debug\netcoreapp3.1\MYAPP-TODO.pdb
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\bin\Debug\netcoreapp3.1\ClassLibraryToDo.dll
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\bin\Debug\netcoreapp3.1\ClassLibraryToDo.pdb
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\obj\Debug\netcoreapp3.1\MYAPP-TODO.csproj.AssemblyReference.cache
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\obj\Debug\netcoreapp3.1\MYAPP-TODO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\obj\Debug\netcoreapp3.1\MYAPP-TODO.AssemblyInfoInputs.cache
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\obj\Debug\netcoreapp3.1\MYAPP-TODO.AssemblyInfo.cs
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\obj\Debug\netcoreapp3.1\MYAPP-TODO.csproj.CoreCompileInputs.cache
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\obj\Debug\netcoreapp3.1\MYAPP-TODO.csproj.CopyComplete
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\obj\Debug\netcoreapp3.1\MYAPP-TODO.dll
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\obj\Debug\netcoreapp3.1\MYAPP-TODO.pdb
+C:\Users\Ugbodaga.A\Desktop\MYAPP-TODO\obj\Debug\netcoreapp3.1\MYAPP-TODO.genruntimeconfig.cache

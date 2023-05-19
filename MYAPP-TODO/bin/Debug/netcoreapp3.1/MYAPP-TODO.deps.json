@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "MYAPP-TODO/1.0.0": {
+        "dependencies": {
+          "ClassLibraryToDo": "1.0.0"
+        },
+        "runtime": {
+          "MYAPP-TODO.dll": {}
+        }
+      },
+      "ClassLibraryToDo/1.0.0": {
+        "runtime": {
+          "ClassLibraryToDo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MYAPP-TODO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClassLibraryToDo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
