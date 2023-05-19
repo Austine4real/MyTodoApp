@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ugbodaga.A\\Desktop\\MYAPP-TODO\\MYAPP-TODO.csproj": {}
+    "C:\\Users\\Ugbodaga.A\\Desktop\\MyTodoApp\\MYAPP-TODO\\MYAPP-TODO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ugbodaga.A\\Desktop\\ClassLibraryToDo\\ClassLibraryToDo.csproj": {
+    "C:\\Users\\Ugbodaga.A\\Desktop\\MyTodoApp\\ClassLibraryToDo\\ClassLibraryToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ugbodaga.A\\Desktop\\ClassLibraryToDo\\ClassLibraryToDo.csproj",
+        "projectUniqueName": "C:\\Users\\Ugbodaga.A\\Desktop\\MyTodoApp\\ClassLibraryToDo\\ClassLibraryToDo.csproj",
         "projectName": "ClassLibraryToDo",
-        "projectPath": "C:\\Users\\Ugbodaga.A\\Desktop\\ClassLibraryToDo\\ClassLibraryToDo.csproj",
+        "projectPath": "C:\\Users\\Ugbodaga.A\\Desktop\\MyTodoApp\\ClassLibraryToDo\\ClassLibraryToDo.csproj",
         "packagesPath": "C:\\Users\\Ugbodaga.A\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ugbodaga.A\\Desktop\\ClassLibraryToDo\\obj\\",
+        "outputPath": "C:\\Users\\Ugbodaga.A\\Desktop\\MyTodoApp\\ClassLibraryToDo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\Ugbodaga.A\\Desktop\\MYAPP-TODO\\MYAPP-TODO.csproj": {
+    "C:\\Users\\Ugbodaga.A\\Desktop\\MyTodoApp\\MYAPP-TODO\\MYAPP-TODO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ugbodaga.A\\Desktop\\MYAPP-TODO\\MYAPP-TODO.csproj",
+        "projectUniqueName": "C:\\Users\\Ugbodaga.A\\Desktop\\MyTodoApp\\MYAPP-TODO\\MYAPP-TODO.csproj",
         "projectName": "MYAPP-TODO",
-        "projectPath": "C:\\Users\\Ugbodaga.A\\Desktop\\MYAPP-TODO\\MYAPP-TODO.csproj",
+        "projectPath": "C:\\Users\\Ugbodaga.A\\Desktop\\MyTodoApp\\MYAPP-TODO\\MYAPP-TODO.csproj",
         "packagesPath": "C:\\Users\\Ugbodaga.A\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ugbodaga.A\\Desktop\\MYAPP-TODO\\obj\\",
+        "outputPath": "C:\\Users\\Ugbodaga.A\\Desktop\\MyTodoApp\\MYAPP-TODO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,8 +93,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Ugbodaga.A\\Desktop\\ClassLibraryToDo\\ClassLibraryToDo.csproj": {
-                "projectPath": "C:\\Users\\Ugbodaga.A\\Desktop\\ClassLibraryToDo\\ClassLibraryToDo.csproj"
+              "C:\\Users\\Ugbodaga.A\\Desktop\\MyTodoApp\\ClassLibraryToDo\\ClassLibraryToDo.csproj": {
+                "projectPath": "C:\\Users\\Ugbodaga.A\\Desktop\\MyTodoApp\\ClassLibraryToDo\\ClassLibraryToDo.csproj"
               }
             }
           }
