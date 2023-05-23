@@ -54,7 +54,7 @@ namespace ClassLibraryToDo
                         Console.WriteLine("Invalid choice. Please try again.");
                         break;
                 }
-                Console.WriteLine(json);
+
 
                 //Console.WriteLine();
             }
