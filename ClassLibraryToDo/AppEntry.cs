@@ -96,6 +96,7 @@ namespace ClassLibraryToDo
                         break;
                     case "6":
                         taskManager.ViewAllReport(currentUser.Tasks);
+                        Console.WriteLine(taskManager.GetTasksJson(currentUser.Tasks)); 
                         break;
 
                     case "7":

@@ -29,7 +29,6 @@ namespace ClassLibraryToDo
             {
                 // Read the JSON from the file
                 string json = File.ReadAllText(JsonFilePath);
-                Console.WriteLine(json);
 
                 // Deserialize the JSON to a list of tasks
                 return JsonConvert.DeserializeObject<List<Task>>(json);
@@ -38,6 +37,11 @@ namespace ClassLibraryToDo
             {
                 return new List<Task>();
             }
+        }
+
+        public string GetTasksJson(List<Task> tasks)
+        {
+            return JsonConvert.SerializeObject(tasks, Formatting.Indented);
         }
 
 
@@ -329,7 +333,7 @@ namespace ClassLibraryToDo
 
             Console.WriteLine("All Tasks:");
 
-            tasks = LoadTasksFromJson();
+            
 
             MyMethod.PrintTable(tasks);
         }
@@ -423,8 +427,8 @@ namespace ClassLibraryToDo
                 Console.WriteLine($"Priority: {task.Priority}");
                 Console.WriteLine($"Status: {(task.IsCompleted ? "Completed" : "Not Completed")}");
                 Console.WriteLine();
+                 tasks = LoadTasksFromJson();
             }
-
         }
         //public void AddTask(List<Task> tasks, Guid userId)
         //{
