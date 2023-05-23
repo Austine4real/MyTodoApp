@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XfxQw83U1pXTTQ68EJ6Z7xZqTEedUf5GX2fAMwGk7i19z06HNpfjlsNJ68cx7xuwWMp1I6APYBenIu94CBRU4A==",
+  "dgSpecHash": "09EkyF5Z3ZDgC6igMBhMnQygFfRw3viNKf6y+W7lAN/3vFTPjFhnRwGTcei9NEVNEvB9JTnvKmx613Jtufueug==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ugbodaga.A\\Desktop\\MyTodoApp\\ClassLibraryToDo\\ClassLibraryToDo.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Ugbodaga.A\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

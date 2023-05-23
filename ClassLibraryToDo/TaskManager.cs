@@ -1,13 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
+using Newtonsoft.Json;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
+
 
 namespace ClassLibraryToDo
 {
     public class TaskManager
     {
+        public const string JsonFilePath = "data.json";
+        public void SaveTasksToJson(List<Task> tasks)
+        {
+            // Serialize the tasks list to JSON
+            string json = JsonConvert.SerializeObject(tasks);
+
+            // Write the JSON to the file
+            File.WriteAllText(JsonFilePath, json);
+        }
+
+        // Method to load tasks from the JSON file
+        public List<Task> LoadTasksFromJson()
+        {
+            if (File.Exists(JsonFilePath))
+            {
+                // Read the JSON from the file
+                string json = File.ReadAllText(JsonFilePath);
+                Console.WriteLine(json);
+
+                // Deserialize the JSON to a list of tasks
+                return JsonConvert.DeserializeObject<List<Task>>(json);
+            }
+            else
+            {
+                return new List<Task>();
+            }
+        }
+
+
         public void AddTask(List<Task> tasks, Guid userId)
         {
             while (true)
@@ -115,6 +148,7 @@ namespace ClassLibraryToDo
                     Priority = priority
                 };
                 tasks.Add(newTask);
+                SaveTasksToJson(tasks);
                 MyMethod.PrintTable(tasks);
                 MyMethod.DisplaySuccessInputMessage("Task added successfully.");
                 break;
@@ -294,6 +328,8 @@ namespace ClassLibraryToDo
             }
 
             Console.WriteLine("All Tasks:");
+
+            tasks = LoadTasksFromJson();
 
             MyMethod.PrintTable(tasks);
         }

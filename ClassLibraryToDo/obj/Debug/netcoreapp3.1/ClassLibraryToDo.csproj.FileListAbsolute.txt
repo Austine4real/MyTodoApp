@@ -8,3 +8,13 @@ C:\Users\Ugbodaga.A\Desktop\ClassLibraryToDo\obj\Debug\netcoreapp3.1\ClassLibrar
 C:\Users\Ugbodaga.A\Desktop\ClassLibraryToDo\obj\Debug\netcoreapp3.1\ClassLibraryToDo.csproj.CoreCompileInputs.cache
 C:\Users\Ugbodaga.A\Desktop\ClassLibraryToDo\obj\Debug\netcoreapp3.1\ClassLibraryToDo.dll
 C:\Users\Ugbodaga.A\Desktop\ClassLibraryToDo\obj\Debug\netcoreapp3.1\ClassLibraryToDo.pdb
+C:\Users\Ugbodaga.A\Desktop\MyTodoApp\ClassLibraryToDo\bin\Debug\netcoreapp3.1\ClassLibraryToDo.deps.json
+C:\Users\Ugbodaga.A\Desktop\MyTodoApp\ClassLibraryToDo\bin\Debug\netcoreapp3.1\ClassLibraryToDo.dll
+C:\Users\Ugbodaga.A\Desktop\MyTodoApp\ClassLibraryToDo\bin\Debug\netcoreapp3.1\ClassLibraryToDo.pdb
+C:\Users\Ugbodaga.A\Desktop\MyTodoApp\ClassLibraryToDo\obj\Debug\netcoreapp3.1\ClassLibraryToDo.csproj.AssemblyReference.cache
+C:\Users\Ugbodaga.A\Desktop\MyTodoApp\ClassLibraryToDo\obj\Debug\netcoreapp3.1\ClassLibraryToDo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ugbodaga.A\Desktop\MyTodoApp\ClassLibraryToDo\obj\Debug\netcoreapp3.1\ClassLibraryToDo.AssemblyInfoInputs.cache
+C:\Users\Ugbodaga.A\Desktop\MyTodoApp\ClassLibraryToDo\obj\Debug\netcoreapp3.1\ClassLibraryToDo.AssemblyInfo.cs
+C:\Users\Ugbodaga.A\Desktop\MyTodoApp\ClassLibraryToDo\obj\Debug\netcoreapp3.1\ClassLibraryToDo.csproj.CoreCompileInputs.cache
+C:\Users\Ugbodaga.A\Desktop\MyTodoApp\ClassLibraryToDo\obj\Debug\netcoreapp3.1\ClassLibraryToDo.dll
+C:\Users\Ugbodaga.A\Desktop\MyTodoApp\ClassLibraryToDo\obj\Debug\netcoreapp3.1\ClassLibraryToDo.pdb

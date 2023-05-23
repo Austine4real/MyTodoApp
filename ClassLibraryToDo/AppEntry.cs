@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,8 @@ namespace ClassLibraryToDo
     {
         static UserManager userManager = new UserManager();
         static TaskManager taskManager = new TaskManager();
+        string json = JsonConvert.SerializeObject(taskManager, Formatting.Indented);
+        
         public static void MyAppEntry()
         {
             bool exit = false;
@@ -51,8 +54,9 @@ namespace ClassLibraryToDo
                         Console.WriteLine("Invalid choice. Please try again.");
                         break;
                 }
+                Console.WriteLine(json);
 
-                Console.WriteLine();
+                //Console.WriteLine();
             }
         }
         static void TaskMenu(User currentUser)
