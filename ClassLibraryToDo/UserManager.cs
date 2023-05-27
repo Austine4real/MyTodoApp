@@ -152,6 +152,8 @@ namespace ClassLibraryToDo
 
                 users.Add(newUser);
                 Animation.DisplayRegistrationSuccess();
+                WriteToJson writeToJson = new WriteToJson();
+                writeToJson.WriteToJsons(users);
                 return newUser;
             }
 
@@ -219,11 +221,17 @@ namespace ClassLibraryToDo
                         }
                     }
 
+                    WriteToJson writeToJson = new WriteToJson();
+
+                    ReadFromJson readFromJson = new ReadFromJson();
+                    List<User> result = readFromJson.ReadFromJsons("C:\\Users\\Ugbodaga.A\\Desktop\\MyTodoApp\\MYAPP-TODO\\data.json");
+
                     loggedInUser = users.FirstOrDefault(u => u.Email == email && u.Password == password);
 
                     if (loggedInUser != null)
                     {
                         MyMethod.DisplaySuccessInputMessage($"Welcome back, {email}!");
+                        writeToJson.WriteToJsons(result);
                         break;
                     }
                     else
