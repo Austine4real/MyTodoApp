@@ -1,4 +1,9 @@
 {
-  "ExpandedNodes": [],
+  "ExpandedNodes": [
+    "",
+    "\\ClassLibraryToDo",
+    "\\MYAPP-TODO"
+  ],
+  "SelectedNode": "\\ClassLibraryToDo\\AppEntry.cs",
   "PreviewInSolutionExplorer": false
 }
