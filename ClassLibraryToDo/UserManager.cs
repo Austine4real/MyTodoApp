@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -152,6 +154,9 @@ namespace ClassLibraryToDo
 
                 users.Add(newUser);
                 Animation.DisplayRegistrationSuccess();
+                WriteToJson writeToJson = new WriteToJson();
+                writeToJson.WriteToJsons(users);
+                //SaveUsersToJson(users);
                 return newUser;
             }
 
@@ -218,6 +223,7 @@ namespace ClassLibraryToDo
                             Console.Write("*");
                         }
                     }
+                    users = LoadUsersFromJson("user.json");
 
                     loggedInUser = users.FirstOrDefault(u => u.Email == email && u.Password == password);
 
@@ -250,6 +256,44 @@ namespace ClassLibraryToDo
 
             return loggedInUser;
         }
+
+        //public const string JsonFilePath = "users.json";
+
+        public void SaveUsersToJson(List<User> users)
+        {
+            string GetFullPath = JsonHelper.GetPath("data.json");
+            //string jsonString = JsonSerializer.Serialize(users);
+            string jsonString = JsonConvert.SerializeObject(users);
+            using (StreamWriter writer = new StreamWriter(GetFullPath))
+            {
+                writer.Write(jsonString);
+            }
+            Console.WriteLine("Json is written");
+            //string json = JsonConvert.SerializeObject(users);
+            //File.WriteAllText(JsonFilePath, json);
+        }
+
+        public List<User> LoadUsersFromJson(string fileName)
+        {
+            if (File.Exists(fileName))
+            {
+                string json = File.ReadAllText(fileName);
+                return JsonConvert.DeserializeObject<List<User>>(json);
+            }
+            else
+            {
+                return new List<User>();
+            }
+        }
+
+        public static string GetPath(string fileName)
+        {
+            string currentDir = Environment.CurrentDirectory;
+            DirectoryInfo directory = new DirectoryInfo(
+                Path.GetFullPath(Path.Combine(currentDir, @"..\..\..\" + fileName)));
+            return directory.FullName;
+        }
+
         static User FindUserByEmail(List<User> users, string email)
         {
             foreach (User user in users)
@@ -261,5 +305,7 @@ namespace ClassLibraryToDo
             }
             return null;
         }
+
+
     }
 }

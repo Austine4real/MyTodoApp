@@ -12,25 +12,17 @@ namespace ClassLibraryToDo
 {
     public class TaskManager
     {
-        public const string JsonFilePath = "data.json";
         public void SaveTasksToJson(List<Task> tasks)
         {
-            // Serialize the tasks list to JSON
             string json = JsonConvert.SerializeObject(tasks);
-
-            // Write the JSON to the file
-            File.WriteAllText(JsonFilePath, json);
+            File.WriteAllText("tasks.json", json);
         }
 
-        // Method to load tasks from the JSON file
-        public List<Task> LoadTasksFromJson()
+        public List<Task> LoadTasksFromJson(string filePath)
         {
-            if (File.Exists(JsonFilePath))
+            if (File.Exists(filePath))
             {
-                // Read the JSON from the file
-                string json = File.ReadAllText(JsonFilePath);
-
-                // Deserialize the JSON to a list of tasks
+                string json = File.ReadAllText(filePath);
                 return JsonConvert.DeserializeObject<List<Task>>(json);
             }
             else
@@ -38,11 +30,38 @@ namespace ClassLibraryToDo
                 return new List<Task>();
             }
         }
+        ////public const string JsonFilePath = "data.json";
+        //public const string JsonFilePath = "C:\\Users\\Ugbodaga.A\\Desktop\\MyTodoApp\\MYAPP-TODO\\MYAPP-TODO.sln";
+        //public void SaveTasksToJson(List<Task> tasks)
+        //{
+        //    // Serialize the tasks list to JSON
+        //    string json = JsonConvert.SerializeObject(tasks);
 
-        public string GetTasksJson(List<Task> tasks)
-        {
-            return JsonConvert.SerializeObject(tasks, Formatting.Indented);
-        }
+        //    // Write the JSON to the file
+        //    File.WriteAllText(JsonFilePath, json);
+        //}
+
+        //// Method to load tasks from the JSON file
+        //public List<Task> LoadTasksFromJson()
+        //{
+        //    if (File.Exists(JsonFilePath))
+        //    {
+        //        // Read the JSON from the file
+        //        string json = File.ReadAllText(JsonFilePath);
+
+        //        // Deserialize the JSON to a list of tasks
+        //        return JsonConvert.DeserializeObject<List<Task>>(json);
+        //    }
+        //    else
+        //    {
+        //        return new List<Task>();
+        //    }
+        //}
+
+        //public string GetTasksJson(List<Task> tasks)
+        //{
+        //    return JsonConvert.SerializeObject(tasks, Formatting.Indented);
+        //}
 
 
         public void AddTask(List<Task> tasks, Guid userId)
@@ -152,6 +171,7 @@ namespace ClassLibraryToDo
                     Priority = priority
                 };
                 tasks.Add(newTask);
+                //SaveTasksToJson(tasks);
                 SaveTasksToJson(tasks);
                 MyMethod.PrintTable(tasks);
                 MyMethod.DisplaySuccessInputMessage("Task added successfully.");
@@ -427,7 +447,7 @@ namespace ClassLibraryToDo
                 Console.WriteLine($"Priority: {task.Priority}");
                 Console.WriteLine($"Status: {(task.IsCompleted ? "Completed" : "Not Completed")}");
                 Console.WriteLine();
-                 tasks = LoadTasksFromJson();
+                 //tasks = LoadTasksFromJson();
             }
         }
         //public void AddTask(List<Task> tasks, Guid userId)

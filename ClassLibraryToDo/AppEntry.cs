@@ -9,9 +9,13 @@ namespace ClassLibraryToDo
     public class AppEntry
     {
         static UserManager userManager = new UserManager();
-        static TaskManager taskManager = new TaskManager();
-        string json = JsonConvert.SerializeObject(taskManager, Formatting.Indented);
-        
+        //static TaskManager taskManager = new TaskManager();
+        //string json = JsonConvert.SerializeObject(taskManager, Formatting.Indented);
+       static TaskManager taskManager = new TaskManager();
+
+        // Load tasks from JSON file
+        public List<Task> tasks = taskManager.LoadTasksFromJson("tasks.json");
+
         public static void MyAppEntry()
         {
             bool exit = false;
@@ -96,7 +100,7 @@ namespace ClassLibraryToDo
                         break;
                     case "6":
                         taskManager.ViewAllReport(currentUser.Tasks);
-                        Console.WriteLine(taskManager.GetTasksJson(currentUser.Tasks)); 
+                        //Console.WriteLine(taskManager.GetTasksJson(currentUser.Tasks)); 
                         break;
 
                     case "7":
